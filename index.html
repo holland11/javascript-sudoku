@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<!-- Written by Patrick Holland patrickeholland@gmail.com -->
+
+<html>
+    <head>
+        <title>Sudoku</title>
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>-->
+            <script src="lodash.js"></script>
+        </head>
+        <style>
+            html,body {
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            table {
+                margin-top: 20px;
+                margin-left:auto;
+                margin-right:auto;
+                border-collapse: collapse; 
+                font-family: Calibri, sans-serif;
+                
+            }
+            colgroup, tbody { 
+                border: solid medium; 
+            }
+            td { 
+                border: solid thin; 
+                height: 1.4em; 
+                width: 1.4em; 
+                text-align: center; 
+                padding: 0; 
+            }
+            button {
+                border: none;
+                height: 1.4em;
+                width: 1.4em;
+                text-align: center;
+                padding: 0;
+                margin: auto;
+                background: none;
+            }
+            button:focus {
+                outline:none;
+            }
+            div {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 25px;
+                text-align: center;
+            }
+            .menu {
+                border: solid medium;
+                height: auto;
+                width: auto;
+                padding: 5px;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+          <colgroup><col><col><col>
+          <colgroup><col><col><col>
+          <colgroup><col><col><col>
+          <tbody>
+           <tr> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button>
+           <tr> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button>
+           <tr> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button>
+          <tbody>
+           <tr> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button>
+           <tr> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button>
+           <tr> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button>
+          <tbody>
+           <tr> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button>
+           <tr> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button>
+           <tr> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button> <td><button>
+        </table>
+        <table>
+            <tbody>
+            <tr> <td><button>1 <td><button>2 <td><button>3 <td><button>4 <td><button>5 <td><button>6 <td><button>7 <td><button>8 <td><button>9       
+        </table>
+        <div>
+            <button class="menu">New Game</button><button class="menu">1</button><button class="menu">2</button>
+        </div>
+        <script src="sudokucell.js"></script>
+        <script src="sudokusolver.js"></script>
+        <script src="sudokugrids.js"></script>
+        <script src="debugging.js"></script>
+        <script>
+        
+        </script>
+    </body>
+</html>
